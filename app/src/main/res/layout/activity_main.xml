@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <!-- Layout chứa TrackIT và hình ảnh -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp"> <!-- Khoảng cách dưới layout này -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TrackIT"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="start" /> <!-- Đưa TextView sang góc trái -->
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/OIP"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" /> <!-- Đưa ảnh xuống dưới và căn giữa -->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dangnhap_tieude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Nhập"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Nhập email -->
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nhập mật khẩu -->
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nút đăng nhập -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Nhập"
+        android:padding="12dp"
+        android:backgroundTint="#E91E63"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nút quên mật khẩu -->
+    <TextView
+        android:id="@+id/forgotPasss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot PassWord?"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Đăng ký -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:text="Don't have an account? Sign up here" />
+</LinearLayout>
